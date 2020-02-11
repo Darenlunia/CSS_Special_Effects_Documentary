@@ -32,12 +32,11 @@ body{
 .container a{
     position: relative;
     display: inline-block;
-    padding: 10px 35px;
+    padding: 10px 30px;
     margin: 20px;
     text-decoration: none;
-    text-transform:uppercase;
     letter-spacing: 2px;
-    font-size: 14px;
+    font-size: 12px;
     color: #fff;
     transition:0.3s
 }
@@ -69,26 +68,27 @@ body{
 
 .container a:hover{
     background-position-x: 100%;
-    transform: translateY(-10px);
+    transform: translateY(-15px);
 }
 
-
 .container a:before{
-    contain: "";
+    content: '';
     position: absolute;
-    bottom:0px;
-    left:5%;
+    bottom: 0;
+    left: 5%;
     width: 90%;
     height: 4px;
-    background: rgba(0,0,0,.2);
+    background: rgba(0,0,0,.2);   
     border-radius: 50%;
     transform:scale(0);
-    filter: blur(5px);
+    filter: blur(1px);
     transition:0.3s;
     z-index: -1;
 }
 
 .container a:hover:before{
-    transform:scale(1);
+    transform: scale(1);
     bottom:-15px;
 }
+
+
